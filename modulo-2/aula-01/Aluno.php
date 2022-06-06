@@ -1,10 +1,13 @@
 <?php
 
+// declatação de tipagem
 declare(strict_types=1);
 
+
 class Aluno {
-  public $matricula;
-  public $nome; 
-  public $cpf;
-  public $email;
+  // public = permissao de acesso 
+  // quer dizer publico que esse atributo pode ser acessado de qualquer lugar do seu codigo
+  // senfo possivel modificar
+  public $nome; // atributo
+  public $cpf; // artributo
 }
