@@ -10,20 +10,27 @@ class Produto {
 
   // metodos --------------------------------------
 
-  // acessando o atributo privdo nome
-  public function pegarNome(): string
+  // pegando o atributo privdo nome
+  // metos get sempre retornam alguma coisa
+  public function getNome(): string
   {
     return $this->nome;
   }
 
+  public function getValor(): string
+  {
+    return $this->valor;
+  }
+
   // acessando o atributo privado nome e alterando o seu valor
-  public function alterarNome(string $novoNome): void
+  // dificilmente retorna algum valor
+  // os metodos set pois sua função e so alterar
+  public function setNome(string $novoNome): void
   {
      $this->nome = $novoNome;
   }
 
-  // acessando o atributo privado valor e alterando o seu valor se 
-  public function alterarValor(float $novoValor): void
+  public function setValor(float $novoValor): void
   {
     // aqui estamos corrigindo a questao do valor
     // ou seja nao aceitamos numeros negativos 
