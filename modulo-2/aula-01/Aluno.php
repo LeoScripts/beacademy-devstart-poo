@@ -9,5 +9,5 @@ class Aluno {
   // quer dizer publico que esse atributo pode ser acessado de qualquer lugar do seu codigo
   // senfo possivel modificar
   public string $nome; // atributo
-  public string $cpf; // artributo
+  public  $cpf; // artributo
 }
