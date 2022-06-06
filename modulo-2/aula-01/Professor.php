@@ -7,6 +7,6 @@ declare(strict_types=1);
 class Professor {
   // tipando atributos
   public string $nome; 
-  public string $cpf;
+  public private $cpf;
   public float $salario;
 }
