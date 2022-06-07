@@ -54,8 +54,8 @@ data lessons in course of php(DevStart) module 2 POO
 :heavy_check_mark: create classes;\
 :heavy_check_mark: [use classes](./modulo-2/aula-01/intro.php);\
 :heavy_check_mark: [encapsulation](./modulo-2/aula-02/index.php);\
-:heavy_check_mark: [constructor](./modulo-2/aula-03/index.php);\
-:heavy_check_mark: [constructor PHP 8](./modulo-2/aula-03/Categoria.php);\
+:heavy_check_mark: [constructor, constructor PHP 8 and readonly php 8.1](./modulo-2/aula-03);\
+<!-- :heavy_check_mark: [constructor PHP 8](./modulo-2/aula-03/Categoria.php);\ -->
 
 
 

@@ -6,16 +6,20 @@ declare(strict_types=1);
 class Produto {
   private string $nome; 
   private float $valor;
-  private string $descricao; // inserindo atributo opcional
 
-  // metodo construtor = metodo magico de contrução do objeto
-  // agora e obrigatorio passar pomo paramentro na hora da criaçao 
-  // la no nosso arquivo
-  // pois no momento da criação do objeto este metodo e invocado
-  public function __construct(string $novoNome, float $novoValor)
+  // isso esta disponivel apenas no PHP 8.1
+  private readonly string $descricao; 
+
+  // inserindo relacinamento com categoria
+  private Categoria $categoria;
+
+                                                              // inserindo a categoria
+                                                              // com o tipo Categoria
+  public function __construct(string $novoNome, float $novoValor, Categoria $categoria)
   {
     $this->nome = $novoNome;
     $this->valor = $novoValor;
+    $this -> categoria = $categoria;
   }
 
   public function getNome(): string
