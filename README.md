@@ -84,7 +84,8 @@ php -S localhost:8000 -t aula-01
 http://localhost:8000/intro.php
 
 ```
-[other intructions](./doc.md) 
+[other intructions](https://github.com/LeoScripts/beacademy-devstart-introducaoaophp/blob/main/doc.md) 
+
 ## :memo: License ##
 
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
