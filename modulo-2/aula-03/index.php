@@ -3,6 +3,15 @@
 ini_set('display_erros', 1);
 
 include 'Produto.php';
+include 'Categoria.php';
+
+$c1 = new Categoria('Roupas', 'Roupas Unissex');
+$c2 = new Categoria('Roupas de Banho', 'Toalhas para rosto');
+$c3 = new Categoria('calçados', 'calçados em geral');
+
+var_dump($c1);
+var_dump($c2);
+var_dump($c3);
 
 // agora devemos passar os atributos no momento da criação
 // nao mais como vinha sendo feito no codigo comentado logo abaixo
