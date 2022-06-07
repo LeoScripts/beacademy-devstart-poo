@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Beacademy Devstart Poo" />
+  <!-- <img src="./.github/app.gif" alt="Beacademy Devstart Poo" /> -->
 
   &#xa0;
 
@@ -53,6 +53,8 @@ data lessons in course of php(DevStart) module 2 POO
 :heavy_check_mark: introduction POO;\
 :heavy_check_mark: create classes;\
 :heavy_check_mark: [use classes](./modulo-2/aula-01/intro.php);\
+:heavy_check_mark: [encapsulation](./modulo-2/aula-02/index.php);\
+:heavy_check_mark: [constructor](./modulo-2/aula-03/index.php);\
 
 
 
@@ -72,7 +74,7 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) an
 git clone https://github.com/LeoScripts/beacademy-devstart-php-introducao.git
 
 # access folder
-cd beacademy-devstart-php-introducao
+cd beacademy-devstart-php-poo/modulo-2
 
 # run sever local, insert your folder in {{ aula-02 }} 
 php -S localhost:8000 -t aula-01

@@ -3,8 +3,8 @@
 include 'Produto.php';
 
 $p1 = new Produto();
-$p1->alterarNome('Tenis para corrida');
-$p1->alterarValor(299);
+$p1->setNome('Tenis para corrida');
+$p1->setValor(299);
 
 
 // ex 1 : atributo bublicos  -----------------------------
