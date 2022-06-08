@@ -23,3 +23,4 @@ $us1 = new Usuario();
 $c1 = new Categoria();
 
 var_dump($us1);
+var_dump($c1);
