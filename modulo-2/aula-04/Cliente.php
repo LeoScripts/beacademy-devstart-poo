@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
-class Cliente extends Usuario
+// final = indica que esta classe e final
+// nada pode ser herdado dela
+final class Cliente extends Usuario
 {
   private string $dataCadastro;
 
