@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-class Validador
+abstract class Validador
 {
   // ao colocar o static em uma classe nao e preciso mais instaciar ela quando for chamar
   // so que agora o acesso dele muda
