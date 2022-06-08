@@ -2,7 +2,8 @@
 
 declare(strict_types=1);
 
-class Usuario
+// quando coloco o ( abstract ) porque nossa classe so servira de modelo
+abstract class Usuario
 {
   private string $nome;
   private string $email;
