@@ -2,8 +2,10 @@
 
 declare(strict_types=1);
 
+namespace App\Controller;
+
 class ProductController {
-  public function productController(): void
+  public function productAction(): void
   {
     echo 'Produc Controller';
   }
