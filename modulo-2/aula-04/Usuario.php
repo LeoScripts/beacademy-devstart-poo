@@ -9,6 +9,12 @@ class Usuario
   private string $senha;
   private string $cpf;
 
+  public function __construct(string $email, string $senha)
+  {
+    $this->email = $email;
+    $this->senha = $senha;
+  }
+
   public function getNome(): string
   {
     return $this->nome;

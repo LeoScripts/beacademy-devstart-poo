@@ -7,12 +7,11 @@ include 'Cliente.php';
 include 'Gestor.php';
 
 
-$c1 = new Cliente();
+$c1 = new Cliente('chiquin@email.com', '1234567'); // contrutor do usuario
 $c1->setNome('Chiquin');
+$c1->setDataCadastro('12/12/22');
 
-$g1 = new Gestor();
-$g1->setNome('Zezim');
-
+$g1 = new Gestor('zezin@email.com', '1234567',6000); // contrutor do gestor
 
 var_dump($c1);
 var_dump($g1);
