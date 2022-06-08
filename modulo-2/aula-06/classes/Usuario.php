@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
-class Produto 
+namespace Classes;
+
+class Usuario 
 {
   
 }
