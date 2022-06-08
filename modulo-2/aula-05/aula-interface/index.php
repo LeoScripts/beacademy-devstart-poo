@@ -1,6 +1,6 @@
 <?php
 
-ini_set('display_erros', 1);
+ini_set('display_errors', 1);
 
 include 'Validar.php';
 include 'ValidarBR.php';
