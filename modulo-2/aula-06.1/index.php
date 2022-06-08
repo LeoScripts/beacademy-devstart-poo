@@ -25,9 +25,14 @@ $c1 = new Categoria();
 // reference the Dompdf namespace
 use Dompdf\Dompdf;
 
-// instantiate and use the dompdf class
 $dompdf = new Dompdf();
-$dompdf->loadHtml('hello world');
+
+$html = '';
+
+for($n = 0; $n < 10; $n++) {
+  $html .= 'testando dompdf<br>';
+}
+$dompdf->loadHtml('hello world'.$html);
 
 // (Optional) Setup the paper size and orientation
 $dompdf->setPaper('A4', 'landscape');
