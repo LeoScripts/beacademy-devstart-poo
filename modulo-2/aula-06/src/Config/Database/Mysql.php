@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Classes\config\database;
+namespace Classes\Config\Database;
 
 class Mysql
 {
