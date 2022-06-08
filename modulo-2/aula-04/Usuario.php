@@ -49,9 +49,6 @@ abstract class Usuario
 
   public function setCpf(string $cpf): void
   {
-    if(count(explode('',(int)$cpf)) === 11){
-      die('Ops, o cpf deve ter 11 digitos');
-    }
      $this->cpf = $cpf;
   }
 }
