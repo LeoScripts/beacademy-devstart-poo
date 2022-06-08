@@ -2,7 +2,7 @@
 
 ini_set('display_erros', 1);
 
-// e importante colocar as importações em ordem alfabetica
+include 'Usuario.php';
 include 'Cliente.php';
 include 'Gestor.php';
 
