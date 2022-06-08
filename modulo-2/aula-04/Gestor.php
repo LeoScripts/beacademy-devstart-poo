@@ -14,7 +14,7 @@ class Gestor extends Usuario
   }
 
 
-  public function getSalario(): string
+  public function getSalario(): float
   {
     return $this->salario;
   }
