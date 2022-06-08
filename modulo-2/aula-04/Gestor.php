@@ -1,0 +1,70 @@
+<?php
+
+declare(strict_types=1);
+
+class Gestor
+{
+  private string $nome;
+  private string $email;
+  private string $senha;
+  private string $cpf;
+  private float $salario;
+  private string $horario;
+
+  public function getNome(): string
+  {
+    return $this->nome;
+  }
+  public function setNome(string $nome): void
+  {
+     $this->nome = $nome;
+  }
+  public function getEmail(): string
+  {
+    return $this->email;
+  }
+  public function setEmail(string $email): void
+  {
+     $this->email = $email;
+  }
+
+  public function getSenha(): string
+  {
+    return $this->senha;
+  }
+  public function setSenha(string $senha): void
+  {
+     $this->senha = $senha;
+  }
+
+  public function getCpf(): string
+  {
+    return $this->cpf;
+  }
+
+  public function setCpf(string $cpf): void
+  {
+    if(count(explode('',(int)$cpf)) === 11){
+      die('Ops, o cpf deve ter 11 digitos');
+    }
+     $this->cpf = $cpf;
+  }
+
+  public function getSalario(): string
+  {
+    return $this->salario;
+  }
+  public function setSalario(float $salario): void
+  {
+     $this->salario = $salario;
+  }
+
+  public function getHorario(): string
+  {
+    return $this->horario;
+  }
+  public function setHorario(string $horario): void
+  {
+     $this->horario = $horario;
+  }
+}
