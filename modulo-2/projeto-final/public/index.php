@@ -5,15 +5,22 @@ ini_set('display_errors', 1);
 include '../vendor/autoload.php';
 
 use App\Controller\IndexController;
+use App\Controller\ProductController;
+use App\Controller\ErrorController;
 
 
-// use App\Controller\CategoryController;
-// use App\Controller\ProductController;
+$url = explode('?', $_SERVER['REQUEST_URI'])[0];
 
-$c = new IndexController();
-// $c2 = new CategoryController;
-// $c3 = new ProductController;
-
-$c->indexAction();
-// $c2->categoryAction();
-// $c3->productAction();
+if($url === '/'){
+  $c = new IndexController();
+  $c->indexAction();
+} elseif ($url === '/login') {
+  $c = new IndexController();
+  $c->loginAction();
+} elseif ($url === '/produtos'){
+  $p = new ProductController();
+  $p->listAction();
+} else {
+  $p = new ErrorController();
+  $p->notFoundAction();
+}
