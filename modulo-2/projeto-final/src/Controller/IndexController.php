@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 namespace App\Controller;
-include 'AbstractControl.php';
 
 class IndexController extends AbstractController
 {
