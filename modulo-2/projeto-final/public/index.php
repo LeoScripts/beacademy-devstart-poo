@@ -27,6 +27,17 @@ $routes = [
   ]
   ];
 
+  if(isset($routes[$url]) === false){
+    // $e = new ErrorController();
+    // $e->notFoundAction();
+
+    // simplificando o codigo comentado acima e economisando memoria
+    // a memoria ocupada aqui e apenas no momento da execução depois ela e liberada evitando uso desnecessario da memoria
+    ( new ErrorController() )->notFoundAction(); 
+
+    exit;
+  }
+
 // if($url === '/'){
 //   $c = new IndexController();
 //   $c->indexAction();
