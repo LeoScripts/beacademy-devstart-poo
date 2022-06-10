@@ -4,9 +4,10 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
-class CategoryController {
+class CategoryController extends AbstractController
+{
   public function categoryAction(): void
   {
-    echo 'Category Controller';
+    parent::render('category/index');
   }
 }
