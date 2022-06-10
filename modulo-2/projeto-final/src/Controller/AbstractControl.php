@@ -9,7 +9,6 @@ abstract class AbstractController
   public function render(string $viewName): void
   {
     // abstraindo include
-    include "view/
-    {$viewName}.php";
+    include dir(__DIR__)."view/{$viewName}.php";
   }
 }

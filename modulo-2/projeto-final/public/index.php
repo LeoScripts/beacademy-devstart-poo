@@ -14,6 +14,6 @@ $c = new IndexController();
 // $c2 = new CategoryController;
 // $c3 = new ProductController;
 
-$c->loginAction();
+$c->indexAction();
 // $c2->categoryAction();
 // $c3->productAction();
